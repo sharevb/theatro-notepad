@@ -144,7 +144,7 @@ function theatro_show_post( $show_post_nav = false, $show_full = false ) {
             </div>
 
 			<?php
-			$previous_link = get_post_meta( $post->ID, 'PreviousUrl' );
+			$previous_link = get_post_meta( $post->ID, 'PreviousUrl', true );
 			if ( $previous_link ) {
 				echo '<p class="jendisais"><a href="' . esc_url( $previous_link ) . '">Voir mon article précédent</a></p>';
 			}
